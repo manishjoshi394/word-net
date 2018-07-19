@@ -26,7 +26,7 @@ The WordNet uses SAP to give nearest common lexical ancestor of given two words.
 The class identifies most odd word out of given set of words. (The old school exam question!)
 
 ### Resources required for the preprocessing of WordNet.java
-The location of the file [synsets.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/synsets.txt) and [hypernyms.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/hypernyms.txt) needs to provided to the WordNet.java constructor as two strings for all sorts of processing.
+The location of the files [synsets.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/synsets.txt) and [hypernyms.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/hypernyms.txt) needs to provided to the WordNet.java constructor as two strings for all sorts of processing, these files contain the required language data; you can download them to you local system.
 You can add more words and lexical relationships to the end of these said files by observing the CSV structure of these files and then adding any data to them taking special care to NOT disobey the existing structure of the files.
 Head over to [this link](
 http://coursera.cs.princeton.edu/algs4/assignments/wordnet.html) to get full details of this project and API requirements and to know why did i work this out.
