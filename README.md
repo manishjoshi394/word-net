@@ -18,11 +18,11 @@ All nouns are compared mathematically for relatedness, so the algorithm is stric
 relationships is built using a rooted Directed acyclic graph as a data structure.
 
 ### Quick Description of Classes :
-##### 1. SAP.java
+#### 1. SAP.java
 This class calulates Shortest ancestral path in a directed-graph the path is returned as an Iterables of vertices(represented as integers). You can read more in the file itself or compile a JavaDoc using the same source.
-##### 2. WordNet.java
+#### 2. WordNet.java
 The WordNet uses SAP to give nearest common lexical ancestor of given two words. It uses necessary Symbol Table implementations to achieve the same. The class provides a function to check 
-##### 3. Outcast.java
+#### 3. Outcast.java
 The class identifies most odd word out of given set of words. (The old school exam question!)
 
 ### Resources required for the preprocessing of WordNet.java
