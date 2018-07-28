@@ -34,9 +34,10 @@ import java.util.Scanner;
 public class Outcast {
 
     private WordNet wordnet;
-
+    
     /**
      * The constructor takes a WordNet object
+     * @param wordnet fully initialized word-net object
      */
     public Outcast(WordNet wordnet) {
         this.wordnet = wordnet;
@@ -64,7 +65,11 @@ public class Outcast {
         }
         return nouns[t];    // return the noun with max distance sum
     }
-
+    
+    /**
+     * For unit testing of the class
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         Outcast mj = new Outcast(new WordNet(args[0], args[1]));
         int n;
