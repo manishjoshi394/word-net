@@ -39,6 +39,12 @@ public class SAP {
     private BreadthFirstDirectedPaths fromW;
     private final Digraph G;
 
+    /**
+     * The constructor takes two file names as two strings.
+     *
+     * @param synsets Address of synsets.txt as string
+     * @param hypernyms Address of hypernyms.txt as string
+     */
     public SAP(Digraph G) {
         this.G = new Digraph(G);
     }
