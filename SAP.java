@@ -40,10 +40,9 @@ public class SAP {
     private final Digraph G;
 
     /**
-     * The constructor takes two file names as two strings.
+     * The constructor takes a Directed Graph as an Argument.
      *
-     * @param synsets Address of synsets.txt as string
-     * @param hypernyms Address of hypernyms.txt as string
+     * @param G a directed Graph to be processed
      */
     public SAP(Digraph G) {
         this.G = new Digraph(G);
@@ -126,7 +125,7 @@ public class SAP {
     /**
      * The function calculates ancestor vertex if given the couple of BFS
      * objects which were created using the two children vertices v and w
-     *
+     * <p>
      * The BFS search data objects are used to determine the nearest ancestor
      *
      * @param fromV BFS object created with some source vertex v
