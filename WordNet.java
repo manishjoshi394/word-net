@@ -21,6 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.Digraph;
 import edu.princeton.cs.algs4.StdIn;
@@ -30,6 +31,9 @@ import java.util.HashMap;
 import edu.princeton.cs.algs4.In;
 
 /**
+ * This class provides WordNet processing API via public methods. It builds the
+ * WordNet with the help of two files provided to the construction containing
+ * lexical data in a particular format.
  *
  * @author Manish Joshi
  */
@@ -39,6 +43,12 @@ public final class WordNet {
     private ArrayList<String> synSet;   // integer indexed array
     private HashMap<String, Bag<Integer>> id;   // noun keyed map of synset IDs of noun
 
+    /**
+     * The constructor takes two file names as two strings.
+     *
+     * @param synsets Address of synsets.txt as string
+     * @param hypernyms Address of hypernyms.txt as string
+     */
     public WordNet(String synsets, String hypernyms) {
 
         if (synsets == null || hypernyms == null) {
