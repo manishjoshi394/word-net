@@ -1,5 +1,6 @@
 # WordNet
 This repository consists of a set of classes that provide an effective API that allows the clients to do a set of queries related to lexical relationships between words in English(Or any other language, if you have the required database).
+
 **See the API documentation here. [https://manishjoshi394.github.io/word-net/](https://manishjoshi394.github.io/word-net/).**
 
 ####  Prerequisites
