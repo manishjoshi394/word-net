@@ -1,5 +1,6 @@
 # WordNet
 This repository consists of a set of classes that provide an effective API that allows the clients to do a set of queries related to lexical relationships between words in English(Or any other language, if you have the required database).
+**See the API documentation here. [https://manishjoshi394.github.io/word-net/](https://manishjoshi394.github.io/word-net/).**
 
 ####  Prerequisites
 - If you don't know what is WordNet, read this Wiki page. https://en.wikipedia.org/wiki/WordNet
@@ -19,6 +20,7 @@ All nouns are compared mathematically for relatedness, so the algorithm is stric
 relationships is built using a rooted Directed acyclic graph as a data structure.
 
 ### Quick Description of Classes :
+#### NOTE: This is just a quick summary. See this GitHub page for full API documentation. [https://manishjoshi394.github.io/word-net/](https://manishjoshi394.github.io/word-net/)
 #### 1. SAP.java
 This class calulates Shortest ancestral path in a directed-graph the path is returned as an Iterables of vertices(represented as integers). You can read more in the file itself or compile a JavaDoc using the same source.
 #### 2. WordNet.java
@@ -31,3 +33,5 @@ The location of the files [synsets.txt](http://coursera.cs.princeton.edu/algs4/t
 You can add more words and lexical relationships to the end of these said files by observing the CSV structure of these files and then adding any data to them taking special care to NOT disobey the existing structure of the files.
 Head over to [this link](
 http://coursera.cs.princeton.edu/algs4/assignments/wordnet.html) to get full details of this project and API requirements and to know why did i work this out.
+
+### API References: https://manishjoshi394.github.io/word-net/
