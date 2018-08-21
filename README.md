@@ -11,6 +11,12 @@ This repository consists of a set of classes that provide an effective API that 
 
 **NOTE: Though the code can very well be used to faciliate other Natural Language processing applications, the Code is NOT what it potentially can be. There is a big space for improvement to the code and repo is open for changes. For instance, this implementation does not use the [Gloss]( https://en.wikipedia.org/wiki/Gloss_(annotation))**
  
+### How to use the API ?
+- Download a copy of the repository.
+- Copy the files `synsets.txt`, `hypernyms.txt`; the local location of these files must be passed to the `WordNet.java` constructor if you want a WordNet object. (See the next step)
+- Copy the java source files `Wordnet.java`, `SAP.java`, `Outcast.java` and `dependencies` folder to your project's working directory. Now you can use the classes `WordNet`, `SAP` and `Outcast` directly, create their objects and use their functionality.
+- You can find the complete API documentation here for reference on using the methods of these classes. https://manishjoshi394.github.io/word-net/
+ 
 ### So, What's cool about it?
 - **One class in the repo can do this -** 
 With a suitable client, the API allows you to give two words in command line, you get what's the nearest parent noun they belong to.
