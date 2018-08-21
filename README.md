@@ -7,7 +7,7 @@ This repository consists of a set of classes that provide an effective API that 
 - If you don't know what is WordNet, read this Wiki page. https://en.wikipedia.org/wiki/WordNet
 - If you don't know about Directed-Graphs, refer here. https://en.wikipedia.org/wiki/Directed_graph
 - If you don't know what is Lowest common ancestor(LCA) & Shortest Ancestral Path(SAP), give it a quick skim https://en.wikipedia.org/wiki/Lowest_common_ancestor
-- If you don't have the Educational [algs4](https://algs4.cs.princeton.edu/code/algs4.jar) library, [download it](https://algs4.cs.princeton.edu/code/algs4.jar) and add it to your 'CLASSPATH' (or extract the classes as required at compilation). I'll be using algs4 for doing simple graph processing. 
+- I'll be using the some classes from Educational [algs4](https://algs4.cs.princeton.edu/code/algs4.jar) library, for doing simple graph processing, you need not bother about them since they all are collected in the `dependencies` folder now. 
 
 **NOTE: Though the code can very well be used to faciliate other Natural Language processing applications, the Code is NOT what it potentially can be. There is a big space for improvement to the code and repo is open for changes. For instance, this implementation does not use the [Gloss]( https://en.wikipedia.org/wiki/Gloss_(annotation))**
  
@@ -30,7 +30,7 @@ The WordNet uses SAP to give nearest common lexical ancestor of given two words.
 The class identifies most odd word out of given set of words. (The old school exam question!)
 
 ### Resources required for the preprocessing of WordNet.java
-The location of the files [synsets.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/synsets.txt) and [hypernyms.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/hypernyms.txt) needs to provided to the WordNet.java constructor as two strings for all sorts of processing, these files contain the required language data; you can download them to you local system.
+Download the [synsets.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/synsets.txt) and [hypernyms.txt](http://coursera.cs.princeton.edu/algs4/testing/wordnet/hypernyms.txt) (`Right click` and `Save as` if directly opened in the browser). The local locations of these two files are to provided to the WordNet.java constructor as two strings for all sorts of processing, these files contain the required language data.
 You can add more words and lexical relationships to the end of these said files by observing the CSV structure of these files and then adding any data to them taking special care to NOT disobey the existing structure of the files.
 Head over to [this link](
 http://coursera.cs.princeton.edu/algs4/assignments/wordnet.html) to get full details of this project and API requirements and to know why did i work this out.
