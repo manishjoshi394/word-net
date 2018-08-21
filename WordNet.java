@@ -22,13 +22,9 @@
  * THE SOFTWARE.
  */
 
-import edu.princeton.cs.algs4.Bag;
-import edu.princeton.cs.algs4.Digraph;
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
 import java.util.ArrayList;
 import java.util.HashMap;
-import edu.princeton.cs.algs4.In;
+import dependencies.*;
 
 /**
  * This class provides WordNet processing API via public methods. It builds the
@@ -73,8 +69,8 @@ public final class WordNet {
         readHypernyms(hypernyms, G);
         
         // check whether the Digraph is a rooted DAG or not
-        edu.princeton.cs.algs4.Topological tSort
-                = new edu.princeton.cs.algs4.Topological(G);
+        Topological tSort
+                = new Topological(G);
         if (!tSort.hasOrder() || !isRooted(G)) {
             throw new java.lang.IllegalArgumentException(
                     "NOT a DAG, provided graph has cycles or is NOT rooted");
